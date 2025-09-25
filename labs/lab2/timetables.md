@@ -5,4 +5,4 @@
 Неделя 1 [тут](./timetable_1w.md)
 Неделя 2 [тут](./timetable_2w.md)
 Неделя 3 [тут](./timetable_3w.md)
-
+Картиночка [тут](./meme.png)
