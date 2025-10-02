@@ -2,7 +2,7 @@
 Всего занятий за три недели: 45 
 
 
-Неделя 1 [тут](./timetable_1w.md) 
-Неделя 2 [тут](./timetable_2w.md) 
-Неделя 3 [тут](./timetable_3w.md) 
-Картиночка ![тут](./meme.png)
+[Неделя 1](./timetable_1w.md) 
+[Неделя 2](./timetable_2w.md) 
+[Неделя 3](./timetable_3w.md) 
+![Картиночка](./meme.png)
