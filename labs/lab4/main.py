@@ -128,7 +128,7 @@ print("Задание 10")
 
 ex10_num = int(input("Введите число: "))
 ex10_res = f"Число {ex10_num} - простое"
-for n in range(2,ex10_num):
+for n in range(2,int(ex10_num**0.5)):
     if ex10_num % n == 0:
         ex10_res = f"Число {ex10_num} - составное"
         break
