@@ -91,11 +91,6 @@ def ex7_translate_ru_to_en(ru_word, dictionary):
 
 ex7_search_word = "мир"
 print(f"Перевод '{ex7_search_word}' на английский: {ex7_translate_ru_to_en(ex7_search_word, ex7_en_ru_dict)}")
-
-# Для интерактивного ввода
-# ex7_search_word_input = input("Введите русское слово для перевода на английский: ")
-# print(f"Перевод '{ex7_search_word_input}' на английский: {ex7_translate_ru_to_en(ex7_search_word_input, ex7_en_ru_dict)}")
-
 #description
 #*Функция принимает русское слово и словарь (английский:русский), затем ищет русское слово среди значений и возвращает соответствующий английский ключ. Если слово не найдено, сообщает об этом.*
 
