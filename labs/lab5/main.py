@@ -96,46 +96,31 @@ print(f"Перевод '{ex7_search_word}' на английский: {ex7_trans
 
 #Задание 8
 print("Задание 8")
+from random import randint
 
-import random
+ex8_rules = {
+    0:(1,3),
+    1:(2,3),
+    2:(0,4),
+    3:(2,4),
+    4:(1,0)
+}
+ex8_variants = ("камень","ножницы","бумага","ящерица","спок")
+ex8_player_var = int(input("Выбор должен быть сделан\n1 - камень\n2 - ножницы\n3 - бумага\n4 - ящерица\n5 - спок\n"))-1
+ex8_computer_var = randint(0,4)
+print(f"""{ex8_variants[ex8_player_var]}
+vs
+{ex8_variants[ex8_computer_var]}""")
 
-def ex8_play_game():
-    ex8_choices = ["камень", "ножницы", "бумага", "ящерица", "спок"]
-    ex8_rules = {
-        "ножницы": ["режут бумагу", "обезглавливают ящерицу"],
-        "бумага": ["покрывает камень", "подставляет спока"],
-        "камень": ["давит ящерицу", "разбивает ножницы"],
-        "ящерица": ["отравляет спока", "съедает бумагу"],
-        "спок": ["ломает ножницы", "испаряет камень"]
-    }
-
-    ex8_player_choice = input("Выберите (камень, ножницы, бумага, ящерица, спок): ").lower()
-    while ex8_player_choice not in ex8_choices:
-        print("Некорректный выбор. Пожалуйста, выберите из: камень, ножницы, бумага, ящерица, спок.")
-        ex8_player_choice = input("Выберите: ").lower()
-
-    ex8_computer_choice = random.choice(ex8_choices)
-    print(f"Вы выбрали: {ex8_player_choice}")
-    print(f"Компьютер выбрал: {ex8_computer_choice}")
-
-    if ex8_player_choice == ex8_computer_choice:
-        print("Ничья!")
-    else:
-        ex8_player_wins = False
-        for rule_action in ex8_rules.get(ex8_player_choice, []):
-            if ex8_computer_choice in rule_action:
-                ex8_player_wins = True
-                break
-        
-        if ex8_player_wins:
-            print("Вы выиграли!")
-        else:
-            print("Компьютер выиграл!")
-
-ex8_play_game()
+if ex8_player_var == ex8_computer_var:
+    print("ничья")
+elif ex8_player_var in ex8_rules[ex8_computer_var]:
+    print("компьютер победил")
+else:
+    print("игрок победил")
 
 #description
-#*Код реализует игру Камень-Ножницы-Бумага-Ящерица-Спок. Пользователь вводит свой выбор, компьютер делает случайный выбор. Программа определяет победителя на основе заданных правил и выводит результат.*
+# *Код реализует игру Камень-Ножницы-Бумага-Ящерица-Спок. Пользователь вводит свой выбор, компьютер делает случайный выбор. Программа определяет победителя на основе заданных правил и выводит результат.*
 
 #Задание 9
 print("Задание 9")
