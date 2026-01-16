@@ -1,0 +1,145 @@
+{
+    "Tanks": [
+        {
+            "id": 0,
+            "name": "АИ-92",
+            "type": "АИ-92",
+            "max_volume": 20000,
+            "min_volume": 2000,
+            "current_volume": 20000,
+            "is_working": true
+        },
+        {
+            "id": 1,
+            "name": "АИ-95 №1",
+            "type": "АИ-95",
+            "max_volume": 20000,
+            "min_volume": 2000,
+            "current_volume": 9000,
+            "is_working": true
+        },
+        {
+            "id": 2,
+            "name": "АИ-95 №2",
+            "type": "АИ-95",
+            "max_volume": 20000,
+            "min_volume": 2000,
+            "current_volume": 16000,
+            "is_working": true
+        },
+        {
+            "id": 3,
+            "name": "АИ-98",
+            "type": "АИ-98",
+            "max_volume": 15000,
+            "min_volume": 1500,
+            "current_volume": 15000,
+            "is_working": true
+        },
+        {
+            "id": 4,
+            "name": "ДТ",
+            "type": "ДТ",
+            "max_volume": 20000,
+            "min_volume": 2000,
+            "current_volume": 20000,
+            "is_working": true
+        }
+    ],
+    "Pumps": [
+        {
+            "number": 1,
+            "tanks_ids": [
+                0,
+                1
+            ]
+        },
+        {
+            "number": 2,
+            "tanks_ids": [
+                0,
+                1
+            ]
+        },
+        {
+            "number": 3,
+            "tanks_ids": [
+                0,
+                1,
+                3,
+                4
+            ]
+        },
+        {
+            "number": 4,
+            "tanks_ids": [
+                0,
+                1,
+                3,
+                4
+            ]
+        },
+        {
+            "number": 5,
+            "tanks_ids": [
+                0,
+                2,
+                3,
+                4
+            ]
+        },
+        {
+            "number": 6,
+            "tanks_ids": [
+                0,
+                2,
+                3,
+                4
+            ]
+        },
+        {
+            "number": 7,
+            "tanks_ids": [
+                2,
+                4
+            ]
+        },
+        {
+            "number": 8,
+            "tanks_ids": [
+                2,
+                4
+            ]
+        }
+    ],
+    "statistics": {
+        "autos": 0,
+        "profit": [
+            {
+                "type": "АИ-92",
+                "volume": 0
+            },
+            {
+                "type": "АИ-95",
+                "volume": 0
+            },
+            {
+                "type": "АИ-98",
+                "volume": 0
+            },
+            {
+                "type": "ДТ",
+                "volume": 0
+            }
+        ]
+    },
+    "history": [
+        {
+            "type": "АИ-92",
+            "data1": 20,
+            "data2": 1351.6,
+            "time": "2026-01-16 14:18:07.192504"
+        }
+    ],
+    "emergency": false
+}
