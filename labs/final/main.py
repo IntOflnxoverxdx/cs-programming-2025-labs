@@ -80,7 +80,7 @@ def save_data():
                                           history)),
             "emergency":EMERGENCY
         },state,ensure_ascii=False)
-    print("данные сохранены *добавить*")
+    print("Данные сохранены")
 
 
 
@@ -237,7 +237,7 @@ def print_history():
     if history:
         print("\nИстория операций:")
         for item in sorted(history,key=lambda k: k["time"]):
-            print(f"{item["time"]} | {item["type"].ljust(10)} | {item["data1"]} | {item["data2"]}")
+            print(f"{item["time"]} | {item["type"].ljust(10)} | {item["data1"].ljust(5)} | {item["data2"]}")
     else:    
         print("\nИстории операций нет")
     input("\nНажмите Enter для возврата в меню...")
