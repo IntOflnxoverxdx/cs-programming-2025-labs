@@ -97,7 +97,6 @@ def serve_customer():
     print("\n--- Обслуживание клиента ---\n")
 
     #Получение всех колонок где хотя бы в одной подключенной цистерне есть топливо
-    # available_pumps = list(filter(lambda pump:len(list(filter(lambda tank:tank.is_working and tank.id in pump.tanks_ids,tanks_list)))>0,pumps_list))
     available_pumps = pumps_list
     for (index,pump) in enumerate(available_pumps):
         print(f"{index+1}) {pump.name}")
