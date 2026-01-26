@@ -232,11 +232,10 @@ def print_balance():
 
 # функция вывода истории операций
 def print_history():
-    print(history)
     if history:
         print("\nИстория операций:")
         for item in sorted(history,key=lambda k: k["time"]):
-            print(f"{item["time"]} | {item["type"].ljust(10)} | {item["data1"].ljust(5)} | {item["data2"]}")
+            print(f"{item["time"]} | {item["type"].ljust(11)} | {str(item["data1"]).ljust(8)} | {item["data2"]}")
     else:    
         print("\nИстории операций нет")
     input("\nНажмите Enter для возврата в меню...")
